@@ -27,4 +27,4 @@ if st.button('Prediksi Ibu Hamil Terkena Diabetes  adalah'):
             diabet_prediction = 'Pasien Terkena Diabetes'
         else :
             diabet_prediction = "Pasien Tidak Terkena Diabetes"
-        st.success(diabet_prediction)
+st.success(diabet_prediction)
