@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import pickle
 from sklearn.naive_bayes import GaussianNB
 
 st.title('Prediksi Terkena Diabetes')
@@ -22,4 +20,4 @@ diabet_diagnosis = ''
 # membuat tombol predisksi
 if st.button('Prediksi Ibu Hamil Terkena Diabetes  adalah'):
     diabet_diagnosis = model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,]])
-    st.success(diabet_diagnosis)
+st.success(diabet_diagnosis)
