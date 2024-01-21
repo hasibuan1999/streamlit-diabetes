@@ -21,7 +21,6 @@ Age = st.text_input('Inputkan Usia')
 
 diabet_prediction = ''
 
-# membuat tombol predisksi
 if st.button('Prediksi Ibu Hamil Terkena Diabetes  adalah'):
     diabet_prediction = model.predict(
         [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,]])
