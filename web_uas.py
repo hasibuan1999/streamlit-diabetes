@@ -4,7 +4,6 @@ import numpy as np
 import pickle
 from sklearn.naive_bayes import GaussianNB
 
-    st.title('Prediksi Terkena Diabetes')
     model = pickle.load(open('ramadhanpratamaputra_UTS.pkl', 'rb'))
 
     Pregnancies = st.text_input('Kehamilan')
