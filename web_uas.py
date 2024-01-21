@@ -23,8 +23,4 @@ diabet_prediction = ''
 if st.button('Prediksi Ibu Hamil Terkena Diabetes  adalah'):
     diabet_prediction = model.predict(
         [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,]])
-    if(diabet_prediction[0] == 1):
-        diabet_prediction = 'Pasien Terkena Diabetes'
-    else :
-        diabet_prediction = "Pasien Tidak Terkena Diabetes"
 st.success(diabet_prediction)
