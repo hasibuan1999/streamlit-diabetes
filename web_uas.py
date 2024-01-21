@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 from sklearn.naive_bayes import GaussianNB
-from streamlit_option_menu import option_menu
-import plotly.express as px
 
 st.title('Prediksi Terkena Diabetes')
 model = pickle.load(open('ramadhanpratamaputra_UTS.pkl', 'rb'))
