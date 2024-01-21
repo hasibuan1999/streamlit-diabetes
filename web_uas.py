@@ -17,14 +17,14 @@ BMI = st.text_input('Indeks Masa Tubuh')
 DiabetesPedigreeFunction = st.text_input('Presentase Diabetes')
 Age = st.text_input('Inputkan Usia')
 
-diabet_prediction = ''
+diabet_diagnosis = ''
 
 # membuat tombol predisksi
 if st.button('Prediksi Ibu Hamil Terkena Diabetes  adalah'):
-        diabet_prediction = model.predict(
-            [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,]])
-        if(diabet_prediction[0] == 1):
-            diabet_prediction = 'Pasien Terkena Diabetes'
-        else :
-            diabet_prediction = "Pasien Tidak Terkena Diabetes"
-st.success(diabet_prediction)
+    diabet_predic = model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,]])
+    
+    if(diabet_predic[0] == 1):
+        diabet_diagnosis = 'Pasien Terkena Diabetes'
+    else :
+        diabet_diagnosis = "Pasien Tidak Terkena Diabetes"
+    st.success(diabet_diagnosis)
